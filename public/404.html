@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seite wird geladen…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #f5ecd8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Georgia, serif;
+        color: #5e503f;
+      }
+    </style>
+    <script>
+      // Save the current path
+      sessionStorage.redirect = location.pathname;
+      // Redirect to root, React will handle the rest
+      window.location.replace("/");
+    </script>
+  </head>
+  <body>
+    <h1>Highland Hof lädt...</h1>
+  </body>
+</html>
