@@ -36,8 +36,12 @@ const UnsereHerde = () => {
           </div>
 
           {/* Main Herd Image */}
-          <div className="image-placeholder h-96 mb-12 text-xl">
-            [Hauptbild: Komplette Highland Cattle Herde auf der Weide]
+          <div className="h-96 mb-12 text-xl">
+            <img
+              src={`/images/pages/Herde_2.jpg`}
+              alt={`Bild von Herde`}
+              className="w-full h-full object-cover rounded mb-4"
+            />
           </div>
 
           <HerdSection title="Unsere Bullen" cows={cowData.bulls.map((c) => ({ ...c, category: 'bulls' }))} />
@@ -64,8 +68,12 @@ const UnsereHerde = () => {
                   <li>• Stressfreie Umgebung</li>
                 </ul>
               </div>
-              <div className="image-placeholder h-48">
-                [Bild: Weidelandschaft Vogelsberg]
+              <div className="h-48">
+                <img
+                  src={`/images/pages/Herde_3.jpg`}
+                  alt={`Bild von Herde`}
+                  className="w-full h-full object-cover rounded mb-4"
+                />
               </div>
             </div>
           </div>

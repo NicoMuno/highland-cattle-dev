@@ -28,8 +28,12 @@ const Startseite = () => {
                 </Link>
               </div>
             </div>
-            <div className="image-placeholder h-96 text-lg font-semibold">
-              [Hauptbild: Highland Cattle auf der Weide]
+            <div className="h-96 text-lg font-semibold">
+                <img
+                  src={`/images/pages/h_6.jpg`}
+                  alt={`Bild von Herde`}
+                  className="w-full h-full object-cover rounded"
+                />
             </div>
           </div>
         </div>
@@ -83,14 +87,26 @@ const Startseite = () => {
             Unsere Highland Cattle
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="image-placeholder h-64">
-              [Bild: Highland Bulle]
+            <div className="h-64">
+              <img
+                src={`/images/pages/h_11.jpg`}
+                alt={`Bild von Herde`}
+                className="w-full h-full object-cover rounded"
+              />
             </div>
-            <div className="image-placeholder h-64">
-              [Bild: Highland Kuh mit Kalb]
+            <div className="h-64">
+              <img
+                src={`/images/pages/h_7.jpg`}
+                alt={`Bild von Herde`}
+                className="w-full h-full object-cover rounded"
+              />
             </div>
-            <div className="image-placeholder h-64">
-              [Bild: Highland Herde]
+            <div className="h-64">
+              <img
+                src={`/images/pages/h_5.jpg`}
+                alt={`Bild von Herde`}
+                className="w-full h-full object-cover rounded"
+              />
             </div>
           </div>
           <div className="text-center mt-8">

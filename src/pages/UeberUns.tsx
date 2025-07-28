@@ -16,8 +16,12 @@ const UeberUns = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="image-placeholder h-64 mb-12">
-            [Bild: Hofbesitzer mit Highland Cattle]
+          <div className="h-64 mb-12">
+            <img
+              src={`/images/pages/Herde_1.jpg`}
+              alt={`Bild von Herde`}
+              className="w-full h-full object-cover rounded mb-4"
+            />
           </div>
 
           {/* Story */}
@@ -74,11 +78,19 @@ const UeberUns = () => {
 
           {/* Images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="image-placeholder h-64">
-              [Bild: Hofarbeit/Landwirtschaft]
+            <div className="h-64">
+              <img
+                src={`/images/pages/h_1.jpg`}
+                alt={`Bild von Herde`}
+                className="w-full h-full object-cover rounded mb-4"
+              />
             </div>
-            <div className="image-placeholder h-64">
-              [Bild: Highland Cattle auf der Weide]
+            <div className="h-64">
+              <img
+                src={`/images/pages/Herde_1.jpg`}
+                alt={`Bild von Herde`}
+                className="w-full h-full object-cover rounded mb-4"
+              />
             </div>
           </div>
         </div>

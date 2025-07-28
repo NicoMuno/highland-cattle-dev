@@ -74,12 +74,36 @@ const Kontakt = () => {
           {/* Main Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="farm-card">
+            <div className="farm-card relative"> {/* "relativ" was added for the blocker */}
+
+
               <div className="flex items-center mb-6">
                 <MessageCircle className="text-accent-100 mr-3" size={28} />
                 <h2 className="text-2xl font-semibold">Nachricht senden</h2>
               </div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+
+              {/* Overlay Blocker */}
+              <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-md">
+                <div className="text-center p-6">
+                  <h3 className="text-xl font-semibold text-primary-100 mb-2">
+                    Kontaktformular vorübergehend deaktiviert
+                  </h3>
+                  <p className="text-text-200">
+                    Bitte schreiben Sie uns direkt eine E-Mail an&nbsp;
+                    <a
+                      href="mailto:die_kleins@gmx.de"
+                      className="text-accent-100 underline"
+                    >
+                      die_kleins@gmx.de
+                    </a>.
+                    <br />
+                    Vielen Dank für Ihr Verständnis!
+                  </p>
+                </div>
+              </div>
+
+
+              {/* <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-text-100 mb-2">
                     Name *
@@ -147,7 +171,7 @@ const Kontakt = () => {
                 >
                   Nachricht senden
                 </button>
-              </form>
+              </form> */}
             </div>
 
             {/* Info & Map */}
@@ -182,9 +206,24 @@ const Kontakt = () => {
                 <h3 className="text-xl font-semibold mb-4 text-primary-100">
                   Anfahrt
                 </h3>
-                <div className="image-placeholder h-64 mb-4">
+                {/* <div className="image-placeholder h-64 mb-4">
                   [Karte: Lage des Highland Hofs im Vogelsberg]
+                </div> */}
+
+                {/* Embedded Google Map */}
+                <div className="rounded-md overflow-hidden mb-4 h-64 w-full">
+                  <iframe
+                    title="Karte zum Hof"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.6792259935253!2d9.204853515746546!3d50.59082737949406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd17a489b22211%3A0x2c5090f14bda0b58!2sM%C3%BChlweg%207%2C%2035327%20Ulrichstein!5e0!3m2!1sde!2sde!4v1694025887631!5m2!1sde!2sde"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
+                
                 <p className="text-text-200 text-sm">
                   Unser Hof liegt im wunderschönen Vogelsberg in Hessen. 
                   Die genaue Anfahrtsbeschreibung erhalten Sie bei der Terminvereinbarung.

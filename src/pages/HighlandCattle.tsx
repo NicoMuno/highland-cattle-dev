@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Heart, Star, Award, Eye, Mountain } from 'lucide-react';
+import { Shield, Heart, Star, Award, Eye, Mountain, Beef } from 'lucide-react';
 
 const HighlandCattle = () => {
   return (
@@ -16,8 +16,12 @@ const HighlandCattle = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="image-placeholder h-96 mb-12 text-xl">
-            [Hauptbild: Majestätisches Highland Cattle Portrait]
+          <div className="h-96 mb-12 text-xl">
+            <img
+              src={`/images/pages/h_3.jpg`}
+              alt={`Bild von Herde`}
+              className="w-full h-full object-cover rounded mb-4"
+            />
           </div>
 
           {/* History */}
@@ -89,8 +93,12 @@ const HighlandCattle = () => {
                   Die Hörner, die dem Hochlandrind sein majestätisches Aussehen verleihen, sind meist symmetrisch ausgeprägt. Beim Bullen sind sie eher waagrecht aus der Hornwurzel kommend nach vorne gebogen. Die Hörner der Kühe sind in der Regel deutlich länger und weniger stark ausgeprägt und mit Ausladung nach oben gebogen.
                 </p>
               </div>
-              <div className="image-placeholder h-64">
-                [Bild: Highland Cattle Kopf Nahaufnahme]
+              <div className="h-64">
+                <img
+                  src={`/images/pages/h_7.jpg`}
+                  alt={`Bild von Herde`}
+                  className="w-full h-full object-cover rounded mb-4"
+                />
               </div>
             </div>
           </div>
@@ -100,10 +108,14 @@ const HighlandCattle = () => {
             <div className="farm-card">
               <h3 className="text-xl font-semibold mb-4 text-primary-100">Körper</h3>
               <p className="text-text-200 mb-4">
-                Der Körperbau der Tiere ist kräftig, stämmig mit einem geraden und gut bemuskelten Rücken. Der gut bemuskelte Rücken ist verhältnismäßig lang, breit und gerade.
+                Der Körperbau der Tiere ist kräftig, stämmig mit einem geraden und gut bemuskelten Rücken. Der muskulöse Rücken ist verhältnismäßig lang, breit und gerade.
               </p>
-              <div className="image-placeholder h-48">
-                [Bild: Highland Cattle Körperbau]
+              <div className="h-48">
+                <img
+                  src={`/images/pages/h_0.jpg`}
+                  alt={`Bild von Herde`}
+                  className="w-full h-full object-cover rounded mb-4"
+                />
               </div>
             </div>
             <div className="farm-card">
@@ -111,32 +123,37 @@ const HighlandCattle = () => {
               <p className="text-text-200 mb-4">
                 Das dichte Fell der Tiere setzt sich aus einem dichten Unterhaar und dem langen Oberhaar zusammen. Es schützt die Tiere vor Kälte, Regen, Hitze und Parasiten und gibt dem Highland Cattle sein charakteristisches und urwüchsiges Erscheinungsbild.
               </p>
-              <div className="image-placeholder h-48">
-                [Bild: Highland Cattle Fell Detail]
+              <div className="h-48">
+                <img
+                  src={`/images/pages/h_2.jpg`}
+                  alt={`Bild von Herde`}
+                  className="w-full h-full object-cover rounded mb-4"
+                />
               </div>
             </div>
           </div>
 
           {/* Meat Quality */}
-          <div className="farm-card">
-            <h2 className="text-2xl font-semibold mb-6 text-primary-100">Fleischqualität</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-accent-100">
+          <div className="farm-card mb-12">
+            <div className="flex items-center mb-6">
+              <Beef className="text-accent-100 mr-3" size={32} />
+              <h2 className="text-2xl font-semibold">Fleischqualität</h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-text-100">
+              <h3 className="text-xl font-semibold mb-4 text-accent-100">
                   Gesunde Zucht und Haltung - das schmeckt man!
-                </h3>
-                <p className="text-text-200 mb-4">
-                  Die Besonderheit des Fleisches ist neben dem sehr guten Geschmack sein geringer Fett- und Cholesterinanteil. Im Vergleich zu anderen Rinderrassen besitzt es nur 30% des Fett- und 75% des Cholesterinanteils.
-                </p>
-                <p className="text-text-200 mb-4">
-                  Ein weiteres Qualitätsmerkmal ist sein wesentlich höherer Eiweißgehalt. Die Struktur und Marmorierung des Fleisches ist feinfaserig beschaffen wodurch sich das Fleisch als sehr zart und saftig auszeichnet.
-                </p>
-              </div>
-              <div className="image-placeholder h-48">
-                [Bild: Highland Cattle Fleischqualität]
-              </div>
+              </h3>
+              <p className="mb-6">
+                Die Besonderheit des Fleisches ist neben dem sehr guten Geschmack sein geringer Fett- und Cholesterinanteil. Im Vergleich zu anderen Rinderrassen besitzt es nur 30% des Fett- und 75% des Cholesterinanteils.
+              </p>
+              <p className="mb-6">
+                Ein weiteres Qualitätsmerkmal ist sein wesentlich höherer Eiweißgehalt. Die Struktur und Marmorierung des Fleisches ist feinfaserig beschaffen wodurch sich das Fleisch als sehr zart und saftig auszeichnet.
+              </p>
             </div>
           </div>
+
+
+
         </div>
       </div>
     </div>
