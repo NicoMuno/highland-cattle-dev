@@ -41,9 +41,8 @@ const Kontakt = () => {
               <MapPin className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">Adresse</h3>
               <p className="text-text-200 text-sm">
-                Highland Hof<br />
-                Mustergasse 123<br />
-                36304 Vogelsberg<br />
+                Mühlweg 7<br />
+                35327 Ulrichstein<br />
                 Deutschland
               </p>
             </div>
@@ -51,16 +50,14 @@ const Kontakt = () => {
               <Phone className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">Telefon</h3>
               <p className="text-text-200 text-sm">
-                +49 (0) 6641 12345<br />
-                Mobil: +49 (0) 170 123456
+                +49 (0) 6645 919552
               </p>
             </div>
             <div className="farm-card text-center">
               <Mail className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">E-Mail</h3>
               <p className="text-text-200 text-sm">
-                info@highland-hof.de<br />
-                zucht@highland-hof.de
+                die_kleins@gmx.de
               </p>
             </div>
             <div className="farm-card text-center">
@@ -69,7 +66,7 @@ const Kontakt = () => {
               <p className="text-text-200 text-sm">
                 Nach Terminvereinbarung<br />
                 Montag - Samstag<br />
-                9:00 - 18:00 Uhr
+                13:00 - 19:00 Uhr
               </p>
             </div>
           </div>

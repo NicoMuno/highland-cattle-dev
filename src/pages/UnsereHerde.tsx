@@ -1,5 +1,7 @@
 import React from 'react';
-import { Calendar, MapPin, Award, Heart } from 'lucide-react';
+import { MapPin } from 'lucide-react';
+import cowData from '../data/cows.json';
+import HerdSection from '../components/HerdSection';
 
 const UnsereHerde = () => {
   return (
@@ -27,7 +29,7 @@ const UnsereHerde = () => {
                 <div className="text-text-200">Herdbuch-geführt</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-accent-100 mb-2">5+</div>
+                <div className="text-3xl font-bold text-accent-100 mb-2">10+</div>
                 <div className="text-text-200">Jahre Erfahrung</div>
               </div>
             </div>
@@ -38,102 +40,9 @@ const UnsereHerde = () => {
             [Hauptbild: Komplette Highland Cattle Herde auf der Weide]
           </div>
 
-          {/* Bulls Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-primary-100 mb-8">Unsere Bullen</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="farm-card">
-                <div className="image-placeholder h-64 mb-4">
-                  [Bild: Highland Deckbulle 1]
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Deckbulle "Magnus"</h3>
-                <div className="space-y-2 text-text-200">
-                  <div className="flex items-center">
-                    <Calendar size={16} className="mr-2" />
-                    <span>Geboren: 2019</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Award size={16} className="mr-2" />
-                    <span>Herdbuch-Nr.: HC-2019-XXX</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Heart size={16} className="mr-2" />
-                    <span>Charakteristik: Ruhig, ausgeglichen</span>
-                  </div>
-                </div>
-              </div>
-              <div className="farm-card">
-                <div className="image-placeholder h-64 mb-4">
-                  [Bild: Highland Deckbulle 2]
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Jungbulle "Thor"</h3>
-                <div className="space-y-2 text-text-200">
-                  <div className="flex items-center">
-                    <Calendar size={16} className="mr-2" />
-                    <span>Geboren: 2022</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Award size={16} className="mr-2" />
-                    <span>Herdbuch-Nr.: HC-2022-XXX</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Heart size={16} className="mr-2" />
-                    <span>Charakteristik: Lebhaft, freundlich</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Cows Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-primary-100 mb-8">Unsere Kühe</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((cow) => (
-                <div key={cow} className="farm-card">
-                  <div className="image-placeholder h-48 mb-4">
-                    [Bild: Highland Kuh {cow}]
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">Kuh "Bella {cow}"</h3>
-                  <div className="space-y-1 text-sm text-text-200">
-                    <div className="flex items-center">
-                      <Calendar size={14} className="mr-2" />
-                      <span>Geboren: 201{cow + 5}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Award size={14} className="mr-2" />
-                      <span>Herdbuch geführt</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Calves Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-primary-100 mb-8">Unsere Kälber</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[1, 2, 3, 4].map((calf) => (
-                <div key={calf} className="farm-card">
-                  <div className="image-placeholder h-40 mb-4">
-                    [Bild: Highland Kalb {calf}]
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">Kalb {calf}</h3>
-                  <div className="space-y-1 text-sm text-text-200">
-                    <div className="flex items-center">
-                      <Calendar size={14} className="mr-2" />
-                      <span>Geboren: 2024</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Heart size={14} className="mr-2" />
-                      <span>Gesund & munter</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+          <HerdSection title="Unsere Bullen" cows={cowData.bulls.map((c) => ({ ...c, category: 'bulls' }))} />
+          <HerdSection title="Unsere Kühe" cows={cowData.cows.map((c) => ({ ...c, category: 'cows' }))} />
+          <HerdSection title="Unsere Kälber" cows={cowData.calves.map((c) => ({ ...c, category: 'calves' }))} />
 
           {/* Location */}
           <div className="farm-card">
@@ -144,9 +53,9 @@ const UnsereHerde = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <p className="text-text-200 mb-4">
-                  Unsere Highland Cattle leben das ganze Jahr über auf weitläufigen Weiden 
-                  im Vogelsberg. Die natürliche Landschaft bietet ideale Bedingungen für 
-                  eine artgerechte Haltung.
+                  Unsere Highland Cattle leben das ganze Jahr über auf weitläufigen
+                  Weiden im Vogelsberg. Die natürliche Landschaft bietet ideale
+                  Bedingungen für eine artgerechte Haltung.
                 </p>
                 <ul className="space-y-2 text-text-200">
                   <li>• Ganzjährige Weidehaltung</li>

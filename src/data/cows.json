@@ -1,0 +1,130 @@
+{
+  "bulls": [
+    {
+      "id": 1,
+      "name": "Samson A",
+      "birthYear": 2019,
+      "herdBookNumber": "HC-2019-XXX",
+      "character": "Ruhig, ausgeglichen"
+    },
+    {
+      "id": 2,
+      "name": "Samson B",
+      "birthYear": 2022,
+      "herdBookNumber": "HC-2022-XXX",
+      "character": "Lebhaft, freundlich"
+    }
+  ],
+  "cows": [
+    {
+      "id": 3,
+      "name": "Sally A",
+      "birthYear": 2016,
+      "herdBookNumber": "HC-2016-001",
+      "character": "Neugierig"
+    },
+    {
+      "id": 4,
+      "name": "Sally B",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-002",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 5,
+      "name": "Sarina A",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-003",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 6,
+      "name": "Sarina B",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 7,
+      "name": "Shona",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-004",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 8,
+      "name": "Mini",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 9,
+      "name": "Caja A",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 10,
+      "name": "Caja B",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+        {
+      "id": 11,
+      "name": "Cathleen A",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 12,
+      "name": "Cathleen B",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    },
+    {
+      "id": 13,
+      "name": "Cathleen C",
+      "birthYear": 2017,
+      "herdBookNumber": "HC-2017-005",
+      "character": "Zutraulich"
+    }
+
+  ],
+  "calves": [
+    {
+      "id": 20,
+      "name": "Kalb 1",
+      "birthYear": 2024,
+      "character": "Gesund & munter"
+    },
+    {
+      "id": 21,
+      "name": "Kalb 2",
+      "birthYear": 2024,
+      "character": "Neugierig"
+    },
+    {
+      "id": 22,
+      "name": "Kalb 3",
+      "birthYear": 2024,
+      "character": "Neugierig"
+    },
+    {
+      "id": 23,
+      "name": "Kalb 3",
+      "birthYear": 2024,
+      "character": "Neugierig"
+    },
+    {
+      "id": 24,
+      "name": "Kalb 3",
+      "birthYear": 2024,
+      "character": "Neugierig"
+    }
+  ]
+}

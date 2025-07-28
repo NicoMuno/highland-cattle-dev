@@ -20,9 +20,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <Beef className="h-8 w-8 text-primary-300" />
+            <img src="/favicon.png" alt="Highland Cattle Logo" className="h-12 w-12 object-contain"/>
             <span className="text-2xl font-bold text-primary-300">
-              Highland Hof
+              Highland Cattle vom Katharinental
             </span>
           </Link>
 

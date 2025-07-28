@@ -117,37 +117,6 @@ const HighlandCattle = () => {
             </div>
           </div>
 
-          {/* Colors */}
-          <div className="farm-card mb-12">
-            <h3 className="text-2xl font-semibold mb-6 text-primary-100">Farben</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-600 rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Rot</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-yellow-600 rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Gelb</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-black rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Schwarz</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-700 rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Gestromt</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Graubraun</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white border-2 border-gray-300 rounded-full mx-auto mb-2"></div>
-                <span className="text-sm text-text-200">Weiß</span>
-              </div>
-            </div>
-          </div>
-
           {/* Meat Quality */}
           <div className="farm-card">
             <h2 className="text-2xl font-semibold mb-6 text-primary-100">Fleischqualität</h2>

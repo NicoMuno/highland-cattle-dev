@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-100: #5E503F;
   --primary-200: #8c7c6a;
