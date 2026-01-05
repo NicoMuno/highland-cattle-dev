@@ -1,12 +1,12 @@
 import React from 'react';
-import CowCard, { Cow } from './CowCard';
+import CattleCard, { Cattle } from './CattleCard';
 
 interface HerdSectionProps {
   title: string;
-  cows: Cow[];
+  cattle: Cattle[];
 }
 
-const HerdSection: React.FC<HerdSectionProps> = ({ title, cows }) => {
+const HerdSection: React.FC<HerdSectionProps> = ({ title, cattle }) => {
   return (
     <section className="mb-12">
       <h2 className="text-3xl font-bold text-primary-100 mb-8">{title}</h2>
@@ -17,8 +17,8 @@ const HerdSection: React.FC<HerdSectionProps> = ({ title, cows }) => {
             : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
         }`}
       >
-        {cows.map((cow) => (
-          <CowCard key={cow.id} cow={cow} />
+        {cattle.map((cattle,i) => (
+          <CattleCard key={i} cattle={cattle} />
         ))}
       </div>
     </section>

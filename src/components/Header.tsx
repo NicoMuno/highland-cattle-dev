@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Beef, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+
+import header_data from "../data/components/header.json"
 
 const Header = () => {
   const location = useLocation();
@@ -22,7 +24,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img src="/favicon.png" alt="Highland Cattle Logo" className="h-12 w-12 object-contain"/>
             <span className="text-2xl font-bold text-primary-300">
-              Highland Cattle vom Katharinental
+              {header_data.title}
             </span>
           </Link>
 

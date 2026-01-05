@@ -1,0 +1,18 @@
+{
+    "main":{
+        "description":"Bild von Herde",
+        "path":"/images/pages/h_3.jpg"
+    },
+    "head":{
+        "description":"Cattle Head",
+        "path":"/images/pages/h_7.jpg"
+    },
+    "body":{
+        "description":"Cattle Body",
+        "path":"/images/pages/h_0.jpg"
+    },
+    "hair":{
+        "description":"Cattle Hair",
+        "path":"/images/pages/h_2.jpg"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "kontakt":{
+        "heading":"Kontakt",
+        "anschrift": "Vogelsberg, Deutschland",
+        "phone":"+49 (0) 6645 919552",
+        "mail":"die_kleins@gmx.de"
+    },
+    "about":{
+        "heading":"Highland Hof",
+        "text":"Leidenschaftliche Züchter von Highland Cattle im Vogelsberg. Wir setzen auf nachhaltige Landwirtschaft und artgerechte Haltung."
+    },
+    "info":{
+        "heading":"Unsere Rinder",
+        "text":"Herdbuch-geführte Highland Cattle mit ausgewogenem und ruhigem Charakter. Perfekt für die Vogelsberger Landschaft."
+    },
+    "copyright_year": "2025"
+}

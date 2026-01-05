@@ -1,0 +1,55 @@
+{
+    "title":"Highland Cattle",
+    "subtitle":"Alles über die faszinierende Rinderrasse aus Schottland",
+    "history":{
+        "heading":"Geschichte & Herkunft",
+        "sections":[
+            {"text":"Das schottische Hochlandrind wird in Schottland seit über 200 Jahren in Reinzucht gezüchtet. Grund hierfür sind seine besonderen Eigenschaften. Es handelt sich hierbei um eine sehr genügsame und robuste Rinderrasse, die im Sommer mit wenig ertragreichen Weiden und in langen, nassen Wintern auch ohne Stall gut klar kommt."},
+            {"text":"Ihre Robustheit verdanken diese Tiere den Lebensbedingungen im schottischen Hochland. Die Herdbuch-Zucht existiert seit 1884. Im Jahr 1978 wurden die schottischen Hochlandrinder erstmals nach Deutschland eingeführt und fanden in den letzten Jahren eine explosionsartige Verbreitung."}
+        ]
+    },
+    "properties":{
+        "heading":"Besondere Eigenschaften",
+        "prop_0":{
+            "heading":"Robustheit",
+            "text":"Perfekt angepasst an raue Wetterbedingungen"
+        },
+        "prop_1":{
+            "heading":"Langlebigkeit",
+            "text":"Können bis zu 20 Jahre alt werden"
+        },
+        "prop_2":{
+            "heading":"Gutmütigkeit",
+            "text":"Ruhiger und ausgeglichener Charakter"
+        },
+        "prop_3":{
+            "heading":"Muttereigenschaften",
+            "text":"Exzellente Mutterkühe mit starken Instinkten"
+        }
+        
+    },
+    "appearance_heading":"Charakteristisches Aussehen",
+    "Kopf":{
+        "heading":"Kopf",
+        "sections":[
+            {"text":"Als besonders eindrucksvoll und einzigartig stellt sich der malerische Kopf dieser Rinderrasse dar. Der eher kurze aber breite Kopf mit dem buschigen, langen Haarschopf, der die lebhaften Augen überdeckt, ähnelt der Form eines gleichschenkligen Dreiecks."},
+            {"text":"Die Hörner, die dem Hochlandrind sein majestätisches Aussehen verleihen, sind meist symmetrisch ausgeprägt. Beim Bullen sind sie eher waagrecht aus der Hornwurzel kommend nach vorne gebogen. Die Hörner der Kühe sind in der Regel deutlich länger und weniger stark ausgeprägt und mit Ausladung nach oben gebogen."}
+        ]
+    },
+    "body":{
+        "heading":"Körper",
+        "text":"Der Körperbau der Tiere ist kräftig, stämmig mit einem geraden und gut bemuskelten Rücken. Der muskulöse Rücken ist verhältnismäßig lang, breit und gerade."
+    },
+    "hair":{
+        "heading":"Haare",
+        "text":"Das dichte Fell der Tiere setzt sich aus einem dichten Unterhaar und dem langen Oberhaar zusammen. Es schützt die Tiere vor Kälte, Regen, Hitze und Parasiten und gibt dem Highland Cattle sein charakteristisches und urwüchsiges Erscheinungsbild."
+    },
+    "meat":{
+        "heading":"Fleischqualität",
+        "subheading":"Gesunde Zucht und Haltung - das schmeckt man!",
+        "sections":[
+            {"text":"Die Besonderheit des Fleisches ist neben dem sehr guten Geschmack sein geringer Fett- und Cholesterinanteil. Im Vergleich zu anderen Rinderrassen besitzt es nur 30% des Fett- und 75% des Cholesterinanteils."},
+            {"text":"Ein weiteres Qualitätsmerkmal ist sein wesentlich höherer Eiweißgehalt. Die Struktur und Marmorierung des Fleisches ist feinfaserig beschaffen wodurch sich das Fleisch als sehr zart und saftig auszeichnet."}
+        ]
+    }
+}

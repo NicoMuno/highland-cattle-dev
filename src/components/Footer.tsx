@@ -1,6 +1,9 @@
 import React from 'react';
 import { Heart, MapPin, Phone, Mail } from 'lucide-react';
 
+import footer_data from "../data/components/footer.json";
+import Kontakt from '../pages/Kontakt';
+
 const Footer = () => {
   return (
     <footer className="bg-primary-100 text-primary-300 py-12">
@@ -9,38 +12,42 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-primary-300">Kontakt</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary-300">
+              {footer_data.kontakt.heading}
+            </h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span>Vogelsberg, Deutschland</span>
+                <span>{footer_data.kontakt.anschrift}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+49 (0) 6645 919552</span>
+                <span>{footer_data.kontakt.phone}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>die_kleins@gmx.de</span>
+                <span>{footer_data.kontakt.mail}</span>
               </div>
             </div>
           </div>
 
           {/* About */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-primary-300">Highland Hof</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary-300">
+              {footer_data.about.heading}
+            </h3>
             <p className="text-primary-200">
-              Leidenschaftliche Züchter von Highland Cattle im Vogelsberg. 
-              Wir setzen auf nachhaltige Landwirtschaft und artgerechte Haltung.
+              {footer_data.about.text}
             </p>
           </div>
 
           {/* Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-primary-300">Unsere Rinder</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary-300">
+              {footer_data.info.heading}
+            </h3>
             <p className="text-primary-200">
-              Herdbuch-geführte Highland Cattle mit ausgewogenem und ruhigem Charakter.
-              Perfekt für die Vogelsberger Landschaft.
+              {footer_data.info.text}
             </p>
           </div>
         </div>
@@ -62,7 +69,7 @@ const Footer = () => {
         {/* Bottom Copyright */}
         <div className="border-t border-primary-200 pt-6 text-center">
           <p className="flex items-center justify-center space-x-2 text-primary-200">
-            <span>© 2025 Highland Hof – Mit</span>
+            <span>© {footer_data.copyright_year} Highland Hof – Mit</span>
             <Heart size={16} className="text-accent-100" />
             <span>für unsere Highland Cattle</span>
           </p>

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Startseite from './pages/Startseite';
+import Hero from './pages/Hero';
 import UeberUns from './pages/UeberUns';
 import UnsereHerde from './pages/UnsereHerde';
 import HighlandCattle from './pages/HighlandCattle';
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Startseite />} />
+            <Route path="/" element={<Hero />} />
             <Route path="/ueber-uns" element={<UeberUns />} />
             <Route path="/unsere-herde" element={<UnsereHerde />} />
             <Route path="/highland-cattle" element={<HighlandCattle />} />

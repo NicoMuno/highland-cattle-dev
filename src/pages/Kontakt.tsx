@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
+import kontakt_data from "../data/pages/kontakt.json"
+
 const Kontakt = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -28,10 +30,10 @@ const Kontakt = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-primary-100 mb-4">
-              Kontakt
+              {kontakt_data.title}
             </h1>
             <p className="text-xl text-text-200">
-              Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Sie!
+              {kontakt_data.subtitle}
             </p>
           </div>
 
@@ -41,32 +43,34 @@ const Kontakt = () => {
               <MapPin className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">Adresse</h3>
               <p className="text-text-200 text-sm">
-                Mühlweg 7<br />
-                35327 Ulrichstein<br />
-                Deutschland
+                {kontakt_data.adress.anschrift}<br />
+                {kontakt_data.adress.post}<br />
+                {kontakt_data.adress.land}
               </p>
             </div>
             <div className="farm-card text-center">
               <Phone className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">Telefon</h3>
               <p className="text-text-200 text-sm">
-                +49 (0) 6645 919552
+                {kontakt_data.phone}
               </p>
             </div>
             <div className="farm-card text-center">
               <Mail className="text-accent-100 mx-auto mb-4" size={40} />
               <h3 className="text-lg font-semibold mb-2">E-Mail</h3>
               <p className="text-text-200 text-sm">
-                die_kleins@gmx.de
+                {kontakt_data.mail}
               </p>
             </div>
             <div className="farm-card text-center">
               <Clock className="text-accent-100 mx-auto mb-4" size={40} />
-              <h3 className="text-lg font-semibold mb-2">Besuchszeiten</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                {kontakt_data.visiting.heading}
+              </h3>
               <p className="text-text-200 text-sm">
-                Nach Terminvereinbarung<br />
-                Montag - Samstag<br />
-                13:00 - 19:00 Uhr
+                {kontakt_data.visiting.subheading}<br />
+                {kontakt_data.visiting.days}<br />
+                {kontakt_data.visiting.hours}
               </p>
             </div>
           </div>
@@ -94,7 +98,7 @@ const Kontakt = () => {
                       href="mailto:die_kleins@gmx.de"
                       className="text-accent-100 underline"
                     >
-                      die_kleins@gmx.de
+                      {kontakt_data.mail}
                     </a>.
                     <br />
                     Vielen Dank für Ihr Verständnis!
@@ -178,9 +182,18 @@ const Kontakt = () => {
             <div>
               <div className="farm-card mb-6">
                 <h3 className="text-xl font-semibold mb-4 text-primary-100">
-                  Wir freuen uns auf Ihren Besuch!
+                  {kontakt_data.info.heading}
                 </h3>
-                <p className="text-text-200 mb-4">
+                {
+                  kontakt_data.info.sections.map(
+                    (section, i) => (
+                      <p key={i} className="text-text-200 mb-4">
+                        {section.text}
+                      </p>
+                    )
+                  )
+                }
+                {/* <p className="text-text-200 mb-4">
                   Gerne können Sie unseren Hof und unsere Highland Cattle besuchen. 
                   Vereinbaren Sie einfach einen Termin mit uns, damit wir uns genügend 
                   Zeit für Sie nehmen können.
@@ -189,14 +202,25 @@ const Kontakt = () => {
                   Bei Interesse an unseren Tieren oder bei Fragen zur Highland Cattle 
                   Zucht beraten wir Sie gerne ausführlich. Wir freuen uns darauf, 
                   unsere Leidenschaft für diese wunderbaren Tiere mit Ihnen zu teilen.
-                </p>
+                </p> */}
                 <div className="bg-bg-200 p-4 rounded-lg">
-                  <h4 className="font-semibold text-primary-100 mb-2">Wichtige Hinweise:</h4>
+                  <h4 className="font-semibold text-primary-100 mb-2">
+                    {kontakt_data.info.subheading}
+                  </h4>
                   <ul className="text-sm text-text-200 space-y-1">
-                    <li>• Bitte vereinbaren Sie immer einen Termin</li>
+                    {
+                      kontakt_data.info.list.map(
+                        (element, i) => (
+                          <li key={i}>
+                            {element.text}
+                          </li>
+                        )
+                      )
+                    }
+                    {/* <li>• Bitte vereinbaren Sie immer einen Termin</li>
                     <li>• Feste Schuhe und wetterfeste Kleidung empfohlen</li>
                     <li>• Hunde bitte an der Leine führen</li>
-                    <li>• Fotografieren mit Erlaubnis möglich</li>
+                    <li>• Fotografieren mit Erlaubnis möglich</li> */}
                   </ul>
                 </div>
               </div>
@@ -204,7 +228,7 @@ const Kontakt = () => {
               {/* Map Placeholder */}
               <div className="farm-card">
                 <h3 className="text-xl font-semibold mb-4 text-primary-100">
-                  Anfahrt
+                      {kontakt_data.map.heading}
                 </h3>
                 {/* <div className="image-placeholder h-64 mb-4">
                   [Karte: Lage des Highland Hofs im Vogelsberg]
@@ -225,8 +249,7 @@ const Kontakt = () => {
                 </div>
                 
                 <p className="text-text-200 text-sm">
-                  Unser Hof liegt im wunderschönen Vogelsberg in Hessen. 
-                  Die genaue Anfahrtsbeschreibung erhalten Sie bei der Terminvereinbarung.
+                  {kontakt_data.map.text}
                 </p>
               </div>
             </div>

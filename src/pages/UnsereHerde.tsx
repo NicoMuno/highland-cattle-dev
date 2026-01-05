@@ -1,7 +1,11 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
-import cowData from '../data/cows.json';
+
 import HerdSection from '../components/HerdSection';
+
+import unsereHerde_data from "../data/pages/unsereHerde.json"
+import unsereHerde_images from "../data/images/unsereHerde.json"
+import cattleData from '../data/herd/cattle.json';
 
 const UnsereHerde = () => {
   return (
@@ -10,68 +14,73 @@ const UnsereHerde = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-primary-100 mb-4">
-              Unsere Herde
+              {unsereHerde_data.title}
             </h1>
             <p className="text-xl text-text-200">
-              Lernen Sie unsere Highland Cattle Familie kennen
+              {unsereHerde_data.subtitle}
             </p>
           </div>
 
           {/* Herd Overview */}
           <div className="farm-card mb-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-bold text-accent-100 mb-2">15+</div>
-                <div className="text-text-200">Tiere in der Herde</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent-100 mb-2">100%</div>
-                <div className="text-text-200">Herdbuch-geführt</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent-100 mb-2">10+</div>
-                <div className="text-text-200">Jahre Erfahrung</div>
-              </div>
+              {
+                unsereHerde_data.overview.map(
+                  (sec, i) => (
+                    <div key={i}>
+                      <div className="text-3xl font-bold text-accent-100 mb-2">
+                        {sec.heading}
+                      </div>
+                      <div className="text-text-200">
+                        {sec.subheading}
+                      </div>
+                    </div>
+                  )
+                )
+              }
             </div>
           </div>
 
           {/* Main Herd Image */}
           <div className="h-96 mb-12 text-xl">
             <img
-              src={`/images/pages/Herde_2.jpg`}
-              alt={`Bild von Herde`}
+              src={unsereHerde_images.main.path}
+              alt={unsereHerde_images.main.description}
               className="w-full h-full object-cover rounded mb-4"
             />
           </div>
 
-          <HerdSection title="Unsere Bullen" cows={cowData.bulls.map((c) => ({ ...c, category: 'bulls' }))} />
-          <HerdSection title="Unsere Kühe" cows={cowData.cows.map((c) => ({ ...c, category: 'cows' }))} />
-          <HerdSection title="Unsere Kälber" cows={cowData.calves.map((c) => ({ ...c, category: 'calves' }))} />
+          <HerdSection title="Unsere Bullen" cattle={cattleData.bulls.map((c) => ({ ...c, category: 'bulls' }))} />
+          <HerdSection title="Unsere Kühe" cattle={cattleData.cows.map((c) => ({ ...c, category: 'cows' }))} />
+          <HerdSection title="Unsere Kälber" cattle={cattleData.calves.map((c) => ({ ...c, category: 'calves' }))} />
 
           {/* Location */}
           <div className="farm-card">
             <div className="flex items-center mb-4">
               <MapPin className="text-accent-100 mr-3" size={28} />
-              <h2 className="text-2xl font-semibold">Unsere Weiden</h2>
+              <h2 className="text-2xl font-semibold">
+                {unsereHerde_data.weiden.title}
+              </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <p className="text-text-200 mb-4">
-                  Unsere Highland Cattle leben das ganze Jahr über auf weitläufigen
-                  Weiden im Vogelsberg. Die natürliche Landschaft bietet ideale
-                  Bedingungen für eine artgerechte Haltung.
+                  {unsereHerde_data.weiden.text}
                 </p>
                 <ul className="space-y-2 text-text-200">
-                  <li>• Ganzjährige Weidehaltung</li>
-                  <li>• Natürliche Vogelsberger Landschaft</li>
-                  <li>• Artgerechte Haltung ohne Stallzwang</li>
-                  <li>• Stressfreie Umgebung</li>
+                  {
+                    unsereHerde_data.weiden.list.map(
+                      (element,i) => (
+                        <li key={i}>{element.text}</li>
+                      )
+                    )
+                  }
                 </ul>
               </div>
               <div className="h-48">
                 <img
-                  src={`/images/pages/Herde_3.jpg`}
-                  alt={`Bild von Herde`}
+                  src={unsereHerde_images.footer.path}
+                  alt={unsereHerde_images.footer.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
               </div>

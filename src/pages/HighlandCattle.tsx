@@ -1,6 +1,9 @@
 import React from 'react';
 import { Shield, Heart, Star, Award, Eye, Mountain, Beef } from 'lucide-react';
 
+import highlandCattle_data from "../data/pages/highlandCattle.json"
+import highlandCattle_images from "../data/images/highlandCattle.json"
+
 const HighlandCattle = () => {
   return (
     <div className="min-h-screen py-12">
@@ -8,18 +11,18 @@ const HighlandCattle = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-primary-100 mb-4">
-              Highland Cattle
+              {highlandCattle_data.title}
             </h1>
             <p className="text-xl text-text-200">
-              Alles über die faszinierende Rinderrasse aus Schottland
+              {highlandCattle_data.subtitle}
             </p>
           </div>
 
           {/* Hero Image */}
           <div className="h-96 mb-12 text-xl">
             <img
-              src={`/images/pages/h_3.jpg`}
-              alt={`Bild von Herde`}
+              src={highlandCattle_images.main.path}
+              alt={highlandCattle_images.main.description}
               className="w-full h-full object-cover rounded mb-4"
             />
           </div>
@@ -28,75 +31,96 @@ const HighlandCattle = () => {
           <div className="farm-card mb-12">
             <div className="flex items-center mb-6">
               <Mountain className="text-accent-100 mr-3" size={32} />
-              <h2 className="text-2xl font-semibold">Geschichte & Herkunft</h2>
+              <h2 className="text-2xl font-semibold">
+                {highlandCattle_data.history.heading}
+              </h2>
             </div>
             <div className="prose prose-lg max-w-none text-text-100">
-              <p className="mb-6">
-                Das schottische Hochlandrind wird in Schottland seit über 200 Jahren in Reinzucht gezüchtet. Grund hierfür sind seine besonderen Eigenschaften. Es handelt sich hierbei um eine sehr genügsame und robuste Rinderrasse, die im Sommer mit wenig ertragreichen Weiden und in langen, nassen Wintern auch ohne Stall gut klar kommt.
-              </p>
-              <p className="mb-6">
-                Ihre Robustheit verdanken diese Tiere den Lebensbedingungen im schottischen Hochland. Die Herdbuch-Zucht existiert seit 1884. Im Jahr 1978 wurden die schottischen Hochlandrinder erstmals nach Deutschland eingeführt und fanden in den letzten Jahren eine explosionsartige Verbreitung.
-              </p>
+              {
+                highlandCattle_data.history.sections.map(
+                  (section,i) => (
+                    <p key={i} className="mb-6">
+                      {section.text}
+                    </p>
+                  )
+                )
+              }
             </div>
           </div>
 
           {/* Special Properties */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-primary-100 mb-8 text-center">
-              Besondere Eigenschaften
+              {highlandCattle_data.properties.heading}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="farm-card text-center">
                 <Shield className="text-accent-100 mx-auto mb-4" size={40} />
-                <h3 className="text-lg font-semibold mb-2">Robustheit</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  {highlandCattle_data.properties.prop_0.heading}
+                </h3>
                 <p className="text-text-200 text-sm">
-                  Perfekt angepasst an raue Wetterbedingungen
+                  {highlandCattle_data.properties.prop_0.text}
                 </p>
               </div>
               <div className="farm-card text-center">
                 <Star className="text-accent-100 mx-auto mb-4" size={40} />
-                <h3 className="text-lg font-semibold mb-2">Langlebigkeit</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  {highlandCattle_data.properties.prop_1.heading}
+                </h3>
                 <p className="text-text-200 text-sm">
-                  Können bis zu 20 Jahre alt werden
+                  {highlandCattle_data.properties.prop_1.text}
                 </p>
               </div>
               <div className="farm-card text-center">
                 <Heart className="text-accent-100 mx-auto mb-4" size={40} />
-                <h3 className="text-lg font-semibold mb-2">Gutmütigkeit</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  {highlandCattle_data.properties.prop_2.heading}
+                </h3>
                 <p className="text-text-200 text-sm">
-                  Ruhiger und ausgeglichener Charakter
+                  {highlandCattle_data.properties.prop_2.text}
                 </p>
               </div>
               <div className="farm-card text-center">
                 <Award className="text-accent-100 mx-auto mb-4" size={40} />
-                <h3 className="text-lg font-semibold mb-2">Muttereigenschaften</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  {highlandCattle_data.properties.prop_3.heading}
+                </h3>
                 <p className="text-text-200 text-sm">
-                  Exzellente Mutterkühe mit starken Instinkten
+                  {highlandCattle_data.properties.prop_3.text}
                 </p>
               </div>
             </div>
           </div>
 
           {/* Characteristic Appearance */}
+          {/* Head Characteristics */}
           <div className="farm-card mb-12">
             <div className="flex items-center mb-6">
               <Eye className="text-accent-100 mr-3" size={32} />
-              <h2 className="text-2xl font-semibold">Charakteristisches Aussehen</h2>
+              <h2 className="text-2xl font-semibold">
+                {highlandCattle_data.appearance_heading}
+              </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-primary-100">Kopf</h3>
-                <p className="text-text-200 mb-4">
-                  Als besonders eindrucksvoll und einzigartig stellt sich der malerische Kopf dieser Rinderrasse dar. Der eher kurze aber breite Kopf mit dem buschigen, langen Haarschopf, der die lebhaften Augen überdeckt, ähnelt der Form eines gleichschenkligen Dreiecks.
-                </p>
-                <p className="text-text-200">
-                  Die Hörner, die dem Hochlandrind sein majestätisches Aussehen verleihen, sind meist symmetrisch ausgeprägt. Beim Bullen sind sie eher waagrecht aus der Hornwurzel kommend nach vorne gebogen. Die Hörner der Kühe sind in der Regel deutlich länger und weniger stark ausgeprägt und mit Ausladung nach oben gebogen.
-                </p>
+                <h3 className="text-xl font-semibold mb-4 text-primary-100">
+                  {highlandCattle_data.Kopf.heading}
+                </h3>
+                {
+                  highlandCattle_data.Kopf.sections.map(
+                    (section,i) => (
+                      <p key={i} className="text-text-200 mb-4">
+                        {section.text}
+                      </p>
+                    )
+                  )
+                }
               </div>
               <div className="h-64">
                 <img
-                  src={`/images/pages/h_7.jpg`}
-                  alt={`Bild von Herde`}
+                  src={highlandCattle_images.head.path}
+                  alt={highlandCattle_images.head.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
               </div>
@@ -106,27 +130,32 @@ const HighlandCattle = () => {
           {/* Body Characteristics */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="farm-card">
-              <h3 className="text-xl font-semibold mb-4 text-primary-100">Körper</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary-100">
+                {highlandCattle_data.body.heading}
+              </h3>
               <p className="text-text-200 mb-4">
-                Der Körperbau der Tiere ist kräftig, stämmig mit einem geraden und gut bemuskelten Rücken. Der muskulöse Rücken ist verhältnismäßig lang, breit und gerade.
+                {highlandCattle_data.body.text}  
               </p>
               <div className="h-48">
                 <img
-                  src={`/images/pages/h_0.jpg`}
-                  alt={`Bild von Herde`}
+                  src={highlandCattle_images.body.path}
+                  alt={highlandCattle_images.body.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
               </div>
             </div>
+            {/* Hair Characteristics */}
             <div className="farm-card">
-              <h3 className="text-xl font-semibold mb-4 text-primary-100">Haare</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary-100">
+                {highlandCattle_data.hair.heading}
+              </h3>
               <p className="text-text-200 mb-4">
-                Das dichte Fell der Tiere setzt sich aus einem dichten Unterhaar und dem langen Oberhaar zusammen. Es schützt die Tiere vor Kälte, Regen, Hitze und Parasiten und gibt dem Highland Cattle sein charakteristisches und urwüchsiges Erscheinungsbild.
+                {highlandCattle_data.hair.text}
               </p>
               <div className="h-48">
                 <img
-                  src={`/images/pages/h_2.jpg`}
-                  alt={`Bild von Herde`}
+                  src={highlandCattle_images.hair.path}
+                  alt={highlandCattle_images.hair.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
               </div>
@@ -137,18 +166,23 @@ const HighlandCattle = () => {
           <div className="farm-card mb-12">
             <div className="flex items-center mb-6">
               <Beef className="text-accent-100 mr-3" size={32} />
-              <h2 className="text-2xl font-semibold">Fleischqualität</h2>
+              <h2 className="text-2xl font-semibold">
+                {highlandCattle_data.meat.heading}
+              </h2>
             </div>
             <div className="prose prose-lg max-w-none text-text-100">
               <h3 className="text-xl font-semibold mb-4 text-accent-100">
-                  Gesunde Zucht und Haltung - das schmeckt man!
+                  {highlandCattle_data.meat.subheading}
               </h3>
-              <p className="mb-6">
-                Die Besonderheit des Fleisches ist neben dem sehr guten Geschmack sein geringer Fett- und Cholesterinanteil. Im Vergleich zu anderen Rinderrassen besitzt es nur 30% des Fett- und 75% des Cholesterinanteils.
-              </p>
-              <p className="mb-6">
-                Ein weiteres Qualitätsmerkmal ist sein wesentlich höherer Eiweißgehalt. Die Struktur und Marmorierung des Fleisches ist feinfaserig beschaffen wodurch sich das Fleisch als sehr zart und saftig auszeichnet.
-              </p>
+              {
+                highlandCattle_data.meat.sections.map(
+                  (section,i) => (
+                    <p key={i} className="mb-6">
+                      {section.text}
+                    </p>                    
+                  )
+                )
+              }
             </div>
           </div>
 

@@ -1,0 +1,22 @@
+{
+    "hero_Title":"Willkommen beim Highland Hof",
+    "hero_text": "Leidenschaftliche Züchter von Highland Cattle im Vogelsberg. Wir setzen auf nachhaltige Landwirtschaft, artgerechte Haltung und die Erhaltung dieser wunderschönen Rinderrasse.",
+    "hero_card_heading":"Warum Highland Cattle?",
+    "hero_card_0":{
+        "heading": "Robust & Genügsam",
+        "text":"Highland Cattle sind perfekt an das deutsche Klima angepasst und kommen mit wenig ertragreichen Weiden zurecht."
+    },
+    "hero_card_1":{
+        "heading":"Gutmütig & Friedlich",
+        "text":"Diese Rasse zeichnet sich durch einen ausgeglichenen und ruhigen Charakter aus, ideal für die Familienhaltung."
+    },
+    "hero_card_2":{
+        "heading":"Herdbuch-Qualität",
+        "text":"Alle unsere Tiere sind im Herdbuch geführt und entsprechen höchsten Zuchtstandards für Reinrassigkeit."
+    },
+    "hero_footer":{
+        "heading":"Interessiert an unseren Highland Cattle?",
+        "text":"Kontaktieren Sie uns für weitere Informationen über unsere Zucht, verfügbare Tiere oder Besuche auf unserem Hof.",
+        "button":"Kontakt aufnehmen"
+    }
+}
