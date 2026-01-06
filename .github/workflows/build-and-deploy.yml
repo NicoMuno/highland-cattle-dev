@@ -1,0 +1,73 @@
+name: Build and Deploy to Deployment Repo
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-to-pages
+  cancel-in-progress: true
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout development repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (Vite)
+        run: npm run build
+
+      # Clone the deployment repo (main branch), replace its contents with dist/, commit, push
+      - name: Deploy dist/ to deployment repo main
+        env:
+          DEPLOY_REPO: ${{ secrets.DEPLOY_REPO }}
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          set -e
+
+          if [ -z "$DEPLOY_REPO" ]; then
+            echo "DEPLOY_REPO secret is missing (should be like owner/repo)."
+            exit 1
+          fi
+
+          if [ -z "$DEPLOY_TOKEN" ]; then
+            echo "DEPLOY_TOKEN secret is missing."
+            exit 1
+          fi
+
+          # Configure git identity for the commit
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Clone deployment repo
+          rm -rf deploy_repo
+          git clone --depth 1 --branch main "https://x-access-token:${DEPLOY_TOKEN}@github.com/${DEPLOY_REPO}.git" deploy_repo
+
+          # Sync dist/ into deployment repo root (delete old files)
+          rsync -av --delete --exclude ".git" dist/ deploy_repo/
+
+          # Commit & push only if there are changes
+          cd deploy_repo
+          if git status --porcelain | grep .; then
+            git add -A
+            git commit -m "Deploy from dev repo: ${GITHUB_REPOSITORY}@${GITHUB_SHA}"
+            git push origin main
+            echo "✅ Deployed to ${DEPLOY_REPO} (branch: main)"
+          else
+            echo "ℹ️ No changes to deploy."
+          fi
