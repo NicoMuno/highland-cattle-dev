@@ -1,10 +1,10 @@
 {
     "main":{
         "description":"Bild von Herde",
-        "path":"/images/pages/Herde_2.jpg"
+        "path":"images/pages/Herde_2.jpg"
     },
     "footer":{
         "description":"Bild von Herde",
-        "path":"/images/pages/Herde_3.jpg" 
+        "path":"images/pages/Herde_3.jpg" 
     }
 }
