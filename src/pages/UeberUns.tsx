@@ -2,7 +2,8 @@ import React from 'react';
 import { Users, Target, Tractor, Award } from 'lucide-react';
 
 import ueberUns_data from "../data/pages/ueberUns.json";
-import ueberUns_images from "../data/images/ueberUns.json"
+import ueberUns_images from "../data/images/ueberUns.json";
+import { assetUrl } from "../utils/assets";
 
 const UeberUns = () => {
   return (
@@ -21,7 +22,7 @@ const UeberUns = () => {
           {/* Hero Image */}
           <div className="h-64 mb-12">
             <img
-              src={ueberUns_images.main.path}
+              src={assetUrl(ueberUns_images.main.path)}
               alt={ueberUns_images.main.description}
               className="w-full h-full object-cover rounded mb-4"
             />
@@ -94,7 +95,7 @@ const UeberUns = () => {
                 (img,i) => (
                   <div key={i} className="h-64">
                     <img
-                      src={img.path}
+                      src={assetUrl(img.path)}
                       alt={img.description}
                       className="w-full h-full object-cover rounded mb-4"
                     />

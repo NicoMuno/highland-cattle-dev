@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
-import kontakt_data from "../data/pages/kontakt.json"
+import kontakt_data from "../data/pages/kontakt.json";
 
 const Kontakt = () => {
   const [formData, setFormData] = useState({

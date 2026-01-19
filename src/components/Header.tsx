@@ -4,6 +4,8 @@ import { Menu, X } from 'lucide-react';
 
 import header_data from "../data/components/header.json"
 
+import { assetUrl } from "../utils/assets";
+
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -22,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/favicon.png" alt="Highland Cattle Logo" className="h-12 w-12 object-contain"/>
+            <img src={assetUrl("favicon.png")} alt="Highland Cattle Logo" className="h-12 w-12 object-contain"/>
             <span className="text-2xl font-bold text-primary-300">
               {header_data.title}
             </span>

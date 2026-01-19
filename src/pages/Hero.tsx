@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Heart, Leaf } from 'lucide-react';
 
 import hero_data from "../data/pages/hero.json"
-
 import hero_images from "../data/images/hero.json"
+
+import { assetUrl } from "../utils/assets";
 
 const Hero = () => {
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
             </div>
             <div className="h-96 text-lg font-semibold">
                 <img
-                  src={hero_images.main.path}
+                  src={assetUrl(hero_images.main.path)}
                   alt={hero_images.main.description}
                   className="w-full h-full object-cover rounded"
                 />
@@ -91,7 +92,7 @@ const Hero = () => {
                 (sample,i) => (
                   <div key={i} className="h-64">
                   <img
-                    src={sample.path}
+                    src={assetUrl(sample.path)}
                     alt={sample.description}
                     className="w-full h-full object-cover rounded"
                   />

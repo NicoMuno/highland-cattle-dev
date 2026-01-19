@@ -1,6 +1,8 @@
 import React from 'react';
 import { Calendar, Heart } from 'lucide-react';
 
+import { assetUrl } from "../utils/assets";
+
 export interface Cattle {
   name: string;
   birthYear: number;
@@ -13,7 +15,7 @@ const CattleCard: React.FC<{ cattle: Cattle }> = ({ cattle }) => {
   return (
     <div className="farm-card">
       <img
-        src={cattle.path}
+        src={assetUrl(cattle.path)}
         alt={`Bild von ${cattle.name}`}
         className="w-full h-48 object-cover rounded mb-4"
       />
