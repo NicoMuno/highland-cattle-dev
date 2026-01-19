@@ -1,4 +1,7 @@
+
 export function assetUrl(path: string) {
-  // ensures exactly one slash between base and path
-  return new URL(path.replace(/^\/+/, ""), import.meta.env.BASE_URL).toString();
+  const base = import.meta.env.BASE_URL || "/";
+  const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+  const normalizedPath = path.replace(/^\/+/, ""); // remove leading slashes
+  return `${normalizedBase}${normalizedPath}`;
 }
