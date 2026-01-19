@@ -1,8 +1,10 @@
 import React from 'react';
 import { Shield, Heart, Star, Award, Eye, Mountain, Beef } from 'lucide-react';
 
-import highlandCattle_data from "../data/pages/highlandCattle.json"
-import highlandCattle_images from "../data/images/highlandCattle.json"
+import highlandCattle_data from "../data/pages/highlandCattle.json";
+import highlandCattle_images from "../data/images/highlandCattle.json";
+
+import { assetUrl } from "../utils/assets";
 
 const HighlandCattle = () => {
   return (
@@ -21,7 +23,7 @@ const HighlandCattle = () => {
           {/* Hero Image */}
           <div className="h-96 mb-12 text-xl">
             <img
-              src={highlandCattle_images.main.path}
+              src={assetUrl(highlandCattle_images.main.path)}
               alt={highlandCattle_images.main.description}
               className="w-full h-full object-cover rounded mb-4"
             />
@@ -119,7 +121,7 @@ const HighlandCattle = () => {
               </div>
               <div className="h-64">
                 <img
-                  src={highlandCattle_images.head.path}
+                  src={assetUrl(highlandCattle_images.head.path)}
                   alt={highlandCattle_images.head.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
@@ -138,7 +140,7 @@ const HighlandCattle = () => {
               </p>
               <div className="h-48">
                 <img
-                  src={highlandCattle_images.body.path}
+                  src={assetUrl(highlandCattle_images.body.path)}
                   alt={highlandCattle_images.body.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
@@ -154,7 +156,7 @@ const HighlandCattle = () => {
               </p>
               <div className="h-48">
                 <img
-                  src={highlandCattle_images.hair.path}
+                  src={assetUrl(highlandCattle_images.hair.path)}
                   alt={highlandCattle_images.hair.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />

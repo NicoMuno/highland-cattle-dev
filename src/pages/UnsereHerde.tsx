@@ -3,9 +3,11 @@ import { MapPin } from 'lucide-react';
 
 import HerdSection from '../components/HerdSection';
 
-import unsereHerde_data from "../data/pages/unsereHerde.json"
-import unsereHerde_images from "../data/images/unsereHerde.json"
+import unsereHerde_data from "../data/pages/unsereHerde.json";
+import unsereHerde_images from "../data/images/unsereHerde.json";
 import cattleData from '../data/herd/cattle.json';
+
+import { assetUrl } from "../utils/assets";
 
 const UnsereHerde = () => {
   return (
@@ -44,7 +46,7 @@ const UnsereHerde = () => {
           {/* Main Herd Image */}
           <div className="h-96 mb-12 text-xl">
             <img
-              src={unsereHerde_images.main.path}
+              src={assetUrl(unsereHerde_images.main.path)}
               alt={unsereHerde_images.main.description}
               className="w-full h-full object-cover rounded mb-4"
             />
@@ -79,7 +81,7 @@ const UnsereHerde = () => {
               </div>
               <div className="h-48">
                 <img
-                  src={unsereHerde_images.footer.path}
+                  src={assetUrl(unsereHerde_images.footer.path)}
                   alt={unsereHerde_images.footer.description}
                   className="w-full h-full object-cover rounded mb-4"
                 />
