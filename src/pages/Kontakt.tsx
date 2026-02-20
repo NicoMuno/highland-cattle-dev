@@ -11,19 +11,6 @@ const Kontakt = () => {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form handling logic would go here
-    console.log('Form submitted:', formData);
-  };
-
   return (
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
