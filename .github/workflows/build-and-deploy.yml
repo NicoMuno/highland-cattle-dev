@@ -59,7 +59,7 @@ jobs:
           git clone --depth 1 --branch main "https://x-access-token:${DEPLOY_TOKEN}@github.com/${DEPLOY_REPO}.git" deploy_repo
 
           # Sync dist/ into deployment repo root (delete old files)
-          rsync -av --delete --exclude ".git" dist/ deploy_repo/
+          rsync -av --delete --exclude ".git" --exclude "CNAME" --exclude ".nojekyll" dist/ deploy_repo/
 
           # Commit & push only if there are changes
           cd deploy_repo

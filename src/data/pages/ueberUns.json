@@ -1,29 +1,30 @@
 {
-    "title": "Über uns",
-    "subtitle": "Unsere Geschichte und Leidenschaft für Highland Cattle",
-    "story":
-        {
-            "heading": "Unsere Geschichte",
-            "sections": [
-                {"text":"Nach 10 Jahren landwirtschaftlicher Auszeit haben wir uns überlegt, als Ausgleich zu unserem \"Bürojob\" wieder etwas Landwirtschaft mit Viehhaltung zu betreiben. Maschinen, Geräte, Wiesen war alles noch vorhanden. Bei der Suche nach Rindern mit ganzjähriger Weidehaltung war es schnell klar - Highlands müssen es sein! Diese sind perfekt für unsere Vogelsberger Landschaft und sehen auch noch schön aus."},
-                {"text":"In unserer Nähe gab es einen erfahrenen Highland-Züchter, der Herdbuch-Färsen zu verkaufen hatte. Dort kauften wir unsere ersten beiden Highland Cattle. Zu Beginn deckten wir noch mit einem Leihbullen, dann wurde die Herde größer und es lohnte sich einen eigenen Deckbullen zu kaufen."},
-                {"text":"Nun züchten wir seit einigen Jahren Highlands und haben unsere Entscheidung nicht bereut. Vor allem macht uns der Umgang mit den Tieren und die dazugehörige Arbeit in der Landwirtschaft viel Spaß!"}
-            ]
-        },
-    "mission":
-        {
-            "heading":"Unser Zuchtziel",
-            "text":"Unser Zuchtziel ist es, die Rasse \"Highland Cattle\" in Reinzucht zu erhalten. Daher werden in unserem Betrieb ausschließlich im Herdbuch geführte Tiere gehalten, die sich durch einen ausgeglichenen und ruhigen Charakter auszeichnen."
-        },
-    "feature_0":
-        {
-            "heading":"Moderne Landwirtschaft",
-            "text":"Wir verbinden traditionelle Zuchtmethoden mit modernen landwirtschaftlichen Praktiken für optimale Tierhaltung."   
-        },
-    "feature_1":
-        {
-            "heading":"Herdbuch-Zucht",
-            "text":"Alle unsere Tiere sind im Herdbuch registriert und entsprechen höchsten Qualitätsstandards der Reinzucht."   
-        }
-
+  "title": "Über uns",
+  "subtitle": "Unsere Geschichte und Leidenschaft für Highland Cattle",
+  "story": {
+    "heading": "Unsere Geschichte",
+    "sections": [
+      {
+        "text": "Nach 10 Jahren landwirtschaftlicher Auszeit haben wir uns überlegt, als Ausgleich zu unserem \"Bürojob\" wieder etwas Landwirtschaft mit Viehhaltung zu betreiben. Maschinen, Geräte, Wiesen war alles noch vorhanden. Bei der Suche nach Rindern mit ganzjähriger Weidehaltung war es schnell klar - Highlands müssen es sein! Diese sind perfekt für unsere Vogelsberger Landschaft und sehen auch noch schön aus."
+      },
+      {
+        "text": "In unserer Nähe gab es einen erfahrenen Highland-Züchter, der Herdbuch-Färsen zu verkaufen hatte. Dort kauften wir unsere ersten beiden Highland Cattle. Zu Beginn deckten wir noch mit einem Leihbullen, dann wurde die Herde größer und es lohnte sich einen eigenen Deckbullen zu kaufen."
+      },
+      {
+        "text": "Nun züchten wir seit einigen Jahren Highlands und haben unsere Entscheidung nicht bereut. Vor allem macht uns der Umgang mit den Tieren und die dazugehörige Arbeit in der Landwirtschaft viel Spaß!"
+      }
+    ]
+  },
+  "mission": {
+    "heading": "Unser Zuchtziel",
+    "text": "Unser Zuchtziel ist es, die Rasse \"Highland Cattle\" in Reinzucht zu erhalten. Daher werden in unserem Betrieb ausschließlich im Herdbuch geführte Tiere gehalten, die sich durch einen ausgeglichenen und ruhigen Charakter auszeichnen."
+  },
+  "feature_0": {
+    "heading": "Moderne Landwirtschaft",
+    "text": "Wir verbinden traditionelle Zuchtmethoden mit modernen landwirtschaftlichen Praktiken für optimale Tierhaltung."
+  },
+  "feature_1": {
+    "heading": "Herdbuch-Zucht",
+    "text": "Alle unsere Tiere sind im Herdbuch registriert und entsprechen höchsten Qualitätsstandards der Reinzucht."
+  }
 }
