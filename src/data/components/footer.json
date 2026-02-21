@@ -13,5 +13,10 @@
         "heading":"Unsere Rinder",
         "text":"Herdbuch-geführte Highland Cattle mit ausgewogenem und ruhigem Charakter. Perfekt für die Vogelsberger Landschaft."
     },
-    "copyright_year": "2025"
+    "copyright_year": "2025",
+    "img":{
+        "eu_certificate":"images/zertifikate/Organic-Logo.png",
+        "bio_certificate":"images/zertifikate/Bio-Logo.jpg"
+    }
+    
 }
