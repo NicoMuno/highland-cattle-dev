@@ -1,21 +1,20 @@
 {
-    "main":{
-        "description":"Hauptbild - Highland Cow",
-        "path":"images/pages/h_6.jpg"
+  "main": {
+    "description": "Hauptbild - Highland Cow",
+    "path": "images/pages/h_6.jpg"
+  },
+  "samples": [
+    {
+      "description": "Beispielbild - zwei Highlandcows",
+      "path": "images/pages/h_11.jpg"
     },
-    "samples":[
-        {
-            "description":"Beispielbild - zwei Highlandcows",
-            "path":"images/pages/h_11.jpg"
-        },
-        {
-            "description":"Beispielbild - junge Highlandcow",
-            "path":"images/pages/h_7.jpg"
-        },
-        {
-            "description":"Beispielbild - Weidenbild",
-            "path":"images/pages/h_5.jpg"
-        }
-    ]
-
+    {
+      "description": "Beispielbild - junge Highlandcow",
+      "path": "images/pages/h_7.jpg"
+    },
+    {
+      "description": "Beispielbild - Weidenbild",
+      "path": "images/pages/h_5.jpg"
+    }
+  ]
 }

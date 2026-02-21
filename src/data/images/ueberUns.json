@@ -1,16 +1,16 @@
 {
-    "main":{
-        "description":"Bild von Herde",
-        "path":"images/pages/Herde_1.jpg"
+  "main": {
+    "description": "Bild von Herde",
+    "path": "images/pages/Herde_1.jpg"
+  },
+  "samples": [
+    {
+      "description": "Graues Bild Highland Cowg",
+      "path": "images/pages/h_1.jpg"
     },
-    "samples":[
-        {
-            "description":"Graues Bild Highland Cowg",
-            "path":"images/pages/h_1.jpg" 
-        },
-        {
-            "description":"Bild von Herde",
-            "path":"images/pages/Herde_1.jpg"
-        }
-    ]
+    {
+      "description": "Bild von Herde",
+      "path": "images/pages/Herde_1.jpg"
+    }
+  ]
 }
