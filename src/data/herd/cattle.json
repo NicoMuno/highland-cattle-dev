@@ -4,7 +4,7 @@
       "name": "Samson",
       "birthYear": 2018,
       "character": "Lebhaft, freundlich",
-      "path":"images/cattle/2.jpg"
+      "path": "images/cattle/2.jpg"
     }
   ],
   "cows": [
@@ -12,70 +12,69 @@
       "name": "Sally",
       "birthYear": 2016,
       "character": "Neugierig",
-      "path":"images/cattle/4.jpg"
+      "path": "images/cattle/4.jpg"
     },
     {
       "name": "Sarina",
       "birthYear": 2011,
       "character": "Zutraulich",
-      "path":"images/cattle/5.jpg"
+      "path": "images/cattle/5.jpg"
     },
     {
       "name": "Shona",
       "birthYear": 2014,
       "character": "Lebhaft",
-      "path":"images/cattle/7.jpg"
+      "path": "images/cattle/7.jpg"
     },
     {
       "name": "Cyra",
       "birthYear": 2020,
       "character": "Zutraulich",
-      "path":"images/cattle/8.jpg"
+      "path": "images/cattle/8.jpg"
     },
     {
       "name": "Caja",
       "birthYear": 2015,
       "character": "Neugierig",
-      "path":"images/cattle/10.jpg"
+      "path": "images/cattle/10.jpg"
     },
     {
       "name": "Cathleen",
       "birthYear": 2014,
       "character": "Zutraulich",
-      "path":"images/cattle/11.jpg"
+      "path": "images/cattle/11.jpg"
     }
-
   ],
   "calves": [
     {
       "name": "Kalb 1",
       "birthYear": 2024,
       "character": "Gesund & munter",
-      "path":"images/cattle/20.jpg"
+      "path": "images/cattle/20.jpg"
     },
     {
       "name": "Kalb 2",
       "birthYear": 2024,
       "character": "Lebhaft, freundlich",
-      "path":"images/cattle/21.jpg"
+      "path": "images/cattle/21.jpg"
     },
     {
       "name": "Kalb 3",
       "birthYear": 2024,
       "character": "Neugierig",
-      "path":"images/cattle/22.jpg"
+      "path": "images/cattle/22.jpg"
     },
     {
       "name": "Kalb 3",
       "birthYear": 2024,
       "character": "Neugierig",
-      "path":"images/cattle/23.jpg"
+      "path": "images/cattle/23.jpg"
     },
     {
       "name": "Kalb 4",
       "birthYear": 2024,
       "character": "Zutraulich",
-      "path":"images/cattle/24.jpg"
+      "path": "images/cattle/24.jpg"
     }
   ]
 }
