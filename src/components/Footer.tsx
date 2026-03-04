@@ -2,15 +2,15 @@ import React from 'react';
 import { Heart, MapPin, Phone, Mail } from 'lucide-react';
 
 import footer_data from "../data/components/footer.json";
-import Kontakt from '../pages/Kontakt';
+import kontakt_data from "../data/pages/kontakt.json";
+
+import { assetUrl } from "../utils/assets";
 
 const Footer = () => {
   return (
     <footer className="bg-primary-100 text-primary-300 py-12">
       <div className="container mx-auto px-4">
-        {/* Top Grid: Contact + Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-primary-300">
               {footer_data.kontakt.heading}
@@ -18,15 +18,21 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span>{footer_data.kontakt.anschrift}</span>
+                <span>                
+                  {kontakt_data.address.anschrift}<br />
+                  {kontakt_data.address.post}<br />
+                  {kontakt_data.address.land}
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>{footer_data.kontakt.phone}</span>
+                <span>{kontakt_data.phone}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>{footer_data.kontakt.mail}</span>
+                <a href={`mailto:${kontakt_data.mail}`} className="hover:text-accent-100 transition-colors">
+                  {kontakt_data.mail}
+                </a>
               </div>
             </div>
           </div>
@@ -55,12 +61,12 @@ const Footer = () => {
         {/* Certificate Logos */}
         <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
           <img
-            src="/images/zertifikate/Organic-Logo.png"
+            src={assetUrl(footer_data.img.bio_certificate)}
             alt="EU-Bio-Zertifikat"
             className="h-12 md:h-16 object-contain"
           />
           <img
-            src="/images/zertifikate/Bio-Logo.jpg"
+            src={assetUrl(footer_data.img.eu_certificate)}
             alt="DE-Bio-Zertifikat"
             className="h-12 md:h-16 object-contain"
           />

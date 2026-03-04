@@ -1,36 +1,47 @@
 {
-    "title":"Kontakt",
-    "subtitle":"Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Sie!",
-    "address":{
-        "anschrift":"Mühlweg 7,",
-        "post":"35327 Ulrichstein",
-        "land": "Deutschland"
-    },
-    "phone":"+49 (0) 6645 919552",
-    "mail":"die_kleins@gmx.de",
-    "visiting":{
-        "heading":"Besuchszeiten",
-        "subheading":"Nach Terminvereinbarung!!!",
-        "days":"Montag - Samstag",
-        "hours":"13:00 - 19:00 Uhr"
-    },
-    "info":{
-        "heading":"Wir freuen uns auf Ihren Besuch!",
-        "sections":[
-            {"text":"Gerne können Sie unseren Hof und unsere Highland Cattle besuchen. Vereinbaren Sie einfach einen Termin mit uns, damit wir uns genügend Zeit für Sie nehmen können."},
-            {"text":"Bei Interesse an unseren Tieren oder bei Fragen zur Highland Cattle Zucht beraten wir Sie gerne ausführlich. Wir freuen uns darauf, unsere Leidenschaft für diese wunderbaren Tiere mit Ihnen zu teilen."}
-        ],
-        "subheading":"Wichtige Hinweise:",
-        "list":[
-            {"text":"• Bitte vereinbaren Sie immer einen Termin"},
-            {"text":"• Feste Schuhe und wetterfeste Kleidung empfohlen"},
-            {"text":"• Hunde bitte an der Leine führen"},
-            {"text":"• Fotografieren mit Erlaubnis möglich"}
-        ]
-    },
-    "map":{
-        "heading":"Anfahrt",
-        "text":"Unser Hof liegt im wunderschönen Vogelsberg in Hessen. Die genaue Anfahrtsbeschreibung erhalten Sie bei der Terminvereinbarung."
-    }
-
+  "title": "Kontakt",
+  "subtitle": "Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Sie!",
+  "address": {
+    "anschrift": "Mühlweg 7,",
+    "post": "35327 Ulrichstein",
+    "land": "Deutschland"
+  },
+  "phone": "+49 (0) 6645 919552",
+  "mail": "die_kleins@gmx.de",
+  "visiting": {
+    "heading": "Besuchszeiten",
+    "subheading": "Nach Terminvereinbarung!",
+    "days": "Montag - Samstag",
+    "hours": "10:00 - 15:00 Uhr"
+  },
+  "info": {
+    "heading": "Wir freuen uns auf Ihren Besuch!",
+    "sections": [
+      {
+        "text": "Gerne können Sie unseren Hof und unsere Highland Cattle besuchen. Vereinbaren Sie einfach einen Termin mit uns, damit wir uns genügend Zeit für Sie nehmen können."
+      },
+      {
+        "text": "Bei Interesse an unseren Tieren oder bei Fragen zur Highland Cattle Zucht beraten wir Sie gerne ausführlich. Wir freuen uns darauf, unsere Leidenschaft für diese wunderbaren Tiere mit Ihnen zu teilen."
+      }
+    ],
+    "subheading": "Wichtige Hinweise:",
+    "list": [
+      {
+        "text": "• Bitte vereinbaren Sie immer einen Termin"
+      },
+      {
+        "text": "• Feste Schuhe und wetterfeste Kleidung empfohlen"
+      },
+      {
+        "text": "• Hunde bitte an der Leine führen"
+      },
+      {
+        "text": "• Fotografieren mit Erlaubnis möglich"
+      }
+    ]
+  },
+  "map": {
+    "heading": "Anfahrt",
+    "text": "Unser Hof liegt im wunderschönen Vogelsberg in Hessen. Die genaue Anfahrtsbeschreibung erhalten Sie bei der Terminvereinbarung."
+  }
 }

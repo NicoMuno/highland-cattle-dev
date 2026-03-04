@@ -1,30 +1,36 @@
 {
-    "title":"Unsere Herde",
-    "subtitle":"Lernen Sie unsere Highland Cattle Familie kennen",
-    "overview": [
-        {
-            "heading":"15+",
-            "subheading":"Tiere in der Herde"
-        },
-        {
-            "heading":"100%",
-            "subheading":"Herdbuch-geführt"
-        },
-        {
-            "heading":"10+",
-            "subheading":"Jahre Erfahrung"
-        }
-    ],
-    "weiden":
+  "title": "Unsere Herde",
+  "subtitle": "Lernen Sie unsere Highland Cattle Familie kennen",
+  "overview": [
     {
-        "title":"Unsere Weiden",
-        "text":"Unsere Highland Cattle leben das ganze Jahr über auf weitläufigen Weiden im Vogelsberg. Die natürliche Landschaft bietet ideale Bedingungen für eine artgerechte Haltung.",
-        "list":[
-            {"text":"• Ganzjährige Weidehaltung"},
-            {"text":"• Natürliche Vogelsberger Landschaft"},
-            {"text":"• Artgerechte Haltung ohne Stallzwang"},
-            {"text":"• Stressfreie Umgebung"}
-        ]
+      "heading": "15+",
+      "subheading": "Tiere in der Herde"
+    },
+    {
+      "heading": "100%",
+      "subheading": "Herdbuch-geführt"
+    },
+    {
+      "heading": "15+",
+      "subheading": "Jahre Erfahrung"
     }
-    
+  ],
+  "weiden": {
+    "title": "Unsere Weiden",
+    "text": "Unsere Highland Cattle leben das ganze Jahr über auf weitläufigen Weiden im Vogelsberg. Die natürliche Landschaft bietet ideale Bedingungen für eine artgerechte Haltung.",
+    "list": [
+      {
+        "text": "• Ganzjährige Weidehaltung"
+      },
+      {
+        "text": "• Natürliche Vogelsberger Landschaft"
+      },
+      {
+        "text": "• Artgerechte Haltung ohne Stallzwang"
+      },
+      {
+        "text": "• Stressfreie Umgebung"
+      }
+    ]
+  }
 }
