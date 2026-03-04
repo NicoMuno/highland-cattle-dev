@@ -67,7 +67,7 @@ jobs:
             git add -A
             git commit -m "Deploy from dev repo: ${GITHUB_REPOSITORY}@${GITHUB_SHA}"
             git push origin main
-            echo "✅ Deployed to ${DEPLOY_REPO} (branch: main)"
+            echo "Deployed to ${DEPLOY_REPO} (branch: main)"
           else
-            echo "ℹ️ No changes to deploy."
+            echo "No changes to deploy."
           fi
